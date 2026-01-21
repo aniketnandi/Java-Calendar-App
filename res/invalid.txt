@@ -1,0 +1,29 @@
+create calendar --name Work --timezone America/New_York
+create calendar --name Work --timezone Europe/Paris
+use calendar --name Nonexistent
+show calendar dashboard from 2025/12/01 to 2025-12-31
+create event "Meeting" from 2024-09-05T10:00 to 2024-09-05T11:00
+edit event subject "NonExistent Event" from 2024-09-05T10:00 to 2024-09-05T11:00 with "New Subject"
+create event "Invalid Time" from 2024-09-05T15:00 to 2024-09-05T14:00
+create event "Bad Date Format" from 09-05-2024T10:00 to 09-05-2024T11:00
+create event "Recurring Error" from 2024-09-05T10:00 to 2024-09-05T11:00 repeats XYZ for 5 times
+create event from 2024-09-05T10:00 to 2024-09-05T11:00
+create calendar --name --timezone America/New_York
+edit calendar --name Work --property invalidProperty NewValue
+edit calendar --name Work --property timezone InvalidTimezone
+copy event "Meeting" on 2024-09-05T10:00 --target NonExistentCalendar to 2024-09-10T10:00
+copy events on 2024-09-05 --target Work to 2024-09-10
+print events on invalid-date
+show status on 2024-13-45T25:70
+export cal
+export cal calendar.txt
+create event "Multi Day Recurring" from 2024-09-05T10:00 to 2024-09-06T11:00 repeats MW for 5 times
+create event "Bad Repeat" on 2024-09-05 repeats MWF for -5 times
+edit events subject "Meeting" from 2024-09-05T10:00 with
+use calendar --name
+show calendar dashboard from 2025-12-01 2025-12-31
+create calendar --name Work --timezone InvalidZone/BadCity
+edit series location "NonExistent Series" from 2024-09-05T10:00 with "New Location"
+show calendar dashboard 2025-12-01 to 2025-12-31
+show calendar dashboard from 2025-13-01 to 2025-12-31
+exit

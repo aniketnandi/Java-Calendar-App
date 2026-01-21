@@ -1,0 +1,37 @@
+create calendar --name Work --timezone America/New_York
+create calendar --name Personal --timezone America/Los_Angeles
+create calendar --name Travel --timezone Europe/London
+use calendar --name Work
+show calendar dashboard from 2023-12-01 to 2025-12-31
+create event "Team Meeting" from 2024-09-05T10:00 to 2024-09-05T11:30
+create event "Lunch Break" on 2024-09-05
+create event "Sprint Planning" from 2024-09-06T09:00 to 2024-09-06T10:00
+create event "Weekly Standup" from 2024-09-09T09:00 to 2024-09-09T09:30 repeats MWF for 12 times
+create event "Office Hours" from 2024-09-05T14:00 to 2024-09-05T15:00 repeats TR until 2024-12-18
+create event "All Hands" on 2024-09-10 repeats F for 10 times
+edit event subject "Team Meeting" from 2024-09-05T10:00 to 2024-09-05T11:30 with "Strategy Meeting"
+edit event location "Strategy Meeting" from 2024-09-05T10:00 to 2024-09-05T11:30 with "Conference Room A"
+edit event description "Strategy Meeting" from 2024-09-05T10:00 to 2024-09-05T11:30 with "Q4 planning session"
+edit event status "Strategy Meeting" from 2024-09-05T10:00 to 2024-09-05T11:30 with PRIVATE
+edit event start "Lunch Break" from 2024-09-05T08:00 to 2024-09-05T17:00 with 2024-09-05T12:00
+edit events subject "Weekly Standup" from 2024-09-09T09:00 with "Daily Standup"
+edit series location "Office Hours" from 2024-09-05T14:00 with "Room 301"
+print events on 2024-09-05
+print events from 2024-09-05T00:00 to 2024-09-30T23:59
+show status on 2024-09-05T10:30
+use calendar --name Personal
+show calendar dashboard from 2023-12-01 to 2025-12-31
+create event "Doctor Appointment" from 2024-09-15T14:00 to 2024-09-15T15:00
+create event "Gym" from 2024-09-10T18:00 to 2024-09-10T19:00 repeats MWF for 20 times
+copy event "Doctor Appointment" on 2024-09-15T14:00 --target Work to 2024-09-15T14:00
+use calendar --name Work
+show calendar dashboard from 2023-12-01 to 2025-12-31
+copy events on 2024-09-05 --target Personal to 2024-10-05
+copy events between 2024-09-05 and 2024-09-30 --target Travel to 2024-01-08
+edit calendar --name Work --property name NewWork
+edit calendar --name NewWork --property timezone America/Chicago
+use calendar --name NewWork
+show calendar dashboard from 2023-12-01 to 2025-12-31
+export cal work_calendar.csv
+export cal work_calendar.ical
+exit
