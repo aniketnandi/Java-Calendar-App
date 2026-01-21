@@ -1,0 +1,69 @@
+Code status questionnaire:
+
+Please complete this questionnaire by selecting the appropriate answer for each question. Then include this file in the code that you send to your customers.
+
+1. Import/export:
+
+    - Script command to export a csv file: Y/N                          : Yes
+    - Exported CSV aligns with Google calendar specs: Y/N               : Yes
+    - Import ics or ical file implementation: Y/N                       : No
+    - Script command to export a csv file: Y/N                          : Yes
+    - Exported CSV aligns with Google calendar specs: Y/N               : Yes
+    - Exported ics or ical aligns with Google calendar specs: Y/N       : Yes
+
+2. Multiple calendars:
+
+    - A user can create more than one calendar with different timezones: Y/N    : Yes
+    - Script commands to support this feature: Y/N                              : Yes
+    - GUI supports this feature: Y/N                                            : Yes
+    - Default calendars are supported in GUI: Y/N                               : Yes
+    - Calendars can be switched in GUI: Y/N                                     : Yes
+    - Calendars can be switched with commands: Y/N                              : Yes
+    - Existing calendar's properties can be edited from GUI: Y/N                : Yes
+    - Existing calendar's properties can be edited with commands: Y/N           : Yes
+
+3. Events:
+    - Single events creation is implemented: Y/N                        : Yes
+    - Recurring events creation is implemented: Y/N                     : Yes
+    - Single events can be created with a text command: Y/N             : Yes
+    - Recurring events can be created with a text command: Y/N          : Yes
+    - Single events can be created in a calendar from GUI: Y/N          : Yes
+    - Recurring events can be created in a calendar from GUI: Y/N       : Yes
+
+    - Copy event from source to target calendar is implemented: Y/N                                         : Yes
+    - Copy event from source to target calendar on a different date and timezone is implemented: Y/N        : Yes
+    - Copy a series of events from source to target calendar is implemented: Y/N                            : Yes
+    - Copy events can be done via text commands: Y/N                                                        : Yes
+
+    - Editing single event properties is implemented: Y/N               : Yes
+    - Editing recurring event properties is implemented: Y/N            : Yes
+    - Editing single event properties via text command: Y/N             : Yes
+    - Editing recurring event properties via GUI action: Y/N            : Yes
+
+    - Querying days for events is implemented: Y/N                      : Yes
+    - Events on a day can be printed via a command: Y/N                 : Yes
+    - Events on a day can be displayed from GUI: Y/N                    : Yes
+
+4. Graphical Interface
+
+    - The GUI has a view to display the month view of a calendar: Y/N                   : Yes
+    - The GUI allows a user to select a calendar and change timezones: Y/N              : Yes
+    - The GUI allows a user to navigate between months: Y/N                             : Yes
+    - The GUI allows a user to see the events on a day in selected calendar: Y/N        : Yes
+    - The GUI allows a user to create different event types: Y/N                        : Yes
+    - The GUI allows a user to view created events: Y/N                                 : Yes
+    - The view allows a user to modify existing events: Y/N                             : Yes
+
+4. Program:
+
+    - Program runs by running main? Y/N                                             : Yes
+    - Program runs correctly in interactive mode? Y/N                               : Yes
+    - Program runs correctly in headless mode by providing a script file? Y/N       : Yes
+    - Program opens expected and functional GUI in gui mode? Y/N                    : Yes
+
+5. Testing
+
+    - Have you written tests to verify every feature: Y/N                           : Yes
+    - Is your mutation coverage for model and controller 90\% or more: Y/N          : Yes
+    - Is your test strength for model and controller 90\% or more: Y/N              : Yes
+    - Is your branch coverage for model and controller 90\% or more: Y/N            : Yes
